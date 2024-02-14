@@ -1,0 +1,13 @@
+#MUSIC
+{
+    padding:10px;
+    margin:0px;
+    box-shadow:15px 15px 45px lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#MUSIC p
+{
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
