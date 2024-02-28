@@ -1,4 +1,5 @@
 sound1 = ""
+sound2 = ""
 
 function preload(){
 sound1 = loadSound("music.mp3")
