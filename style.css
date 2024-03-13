@@ -18,3 +18,12 @@ body{
 .btn1{
     background-color:blueviolet;
 }
+.song_name{
+    font-size:20px;
+}
+canvas{
+    background-color: #000000;
+    border: 5px solid rgb(17, 0, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #9500ff;
+}
