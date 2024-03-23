@@ -33,18 +33,35 @@ fill("red")
 stroke("red")
 
 song_name = sound1.isPlaying();
-console.log(Song1);
+console.log(sound1);
 
-if(scoreleftWristX > 0.2){
+if(scoreleftWrist > 0.2){
 circle(leftWrist_x, leftWrist_y, 20)
 sound2.stop();
 if(song_name == false){
     sound1.play();
-}
-else{
     console.log("Song Name: Track 1");
     document.getElementById("song_id").innerHTML = "Song Name: Track 1";
 }
+else{
+    sound2.play();
+    console.log("Song Name: Track 2");
+    document.getElementById("song_id").innerHTML = "Song Name: Track 2";
+}
+}
+if(scorerightWrist > 0.2){
+    circle(rightWrist_x,rightWrist_y,20);
+    sound1.stop();
+    if(song_name == true){
+        sound2.play();
+        console.log("Song Name: Track 2");
+    document.getElementById("song_id").innerHTML = "Song Name: Track 2";
+    }
+    else{
+        sound1.play()
+        console.log("Song Name: Track 2");
+        document.getElementById("song_id").innerHTML = "Song Name: Track 2";
+    }
 }
 }
 function play(){
@@ -56,8 +73,8 @@ function gotPoses(results) {
     {
         console.log(results);
 
-    scoreleftWrist = results[0].pose.keypoints[9].score;
-    console.log(scoreleftWrist);
+     scoreleftWrist = results[0].pose.keypoints[9].score;
+     console.log(scoreleftWrist);
 
         leftWrist_x = results[0].pose.leftWrist.x;
         leftWrist_x = results[0].pose.leftWrist.y;
